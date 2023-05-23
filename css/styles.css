@@ -5,6 +5,7 @@
 /*MIXIN SIN PARAMETROS*/
 /*MIXINS CON PARAMETROS*/
 /*parametros*/
+/*CONDICIONALES*/
 /*OPERACIONES MATEMATICAS*/
 /*SUMA = valor o una variable + numero*/
 /*RESTA = valor o una variable - numero*/
@@ -48,5 +49,130 @@ h1 {
 .boton--cancelar {
   background-color: red;
 }
+
+/*CONDICIONALES*/
+body {
+  /*CONDICION PRINCIPAL*/
+  /*si no es ninguna de las anteriores*/
+  background-color: aquamarine;
+}
+
+/*BUCLES*/
+/*Bucle for*/
+/*$i quiere decir iteracion, en programacion es buena practica para los bucles que las variables de las vueltas se llamen i*/
+.col-1 {
+  width: 10%;
+}
+
+.col-2 {
+  width: 20%;
+}
+
+.col-3 {
+  width: 30%;
+}
+
+.col-4 {
+  width: 40%;
+}
+
+.col-5 {
+  width: 50%;
+}
+
+.col-6 {
+  width: 60%;
+}
+
+.col-7 {
+  width: 70%;
+}
+
+.col-8 {
+  width: 80%;
+}
+
+.col-9 {
+  width: 90%;
+}
+
+.col-10 {
+  width: 100%;
+}
+
+.bucles:nth-of-type(1) {
+  font-size: 19px;
+  background-color: #9a9a9a;
+}
+
+.bucles:nth-of-type(2) {
+  font-size: 19px;
+  background-color: gray;
+}
+
+.bucles:nth-of-type(3) {
+  font-size: 19px;
+  background-color: #676767;
+}
+
+.bucles:nth-of-type(4) {
+  font-size: 19px;
+  background-color: #4d4d4d;
+}
+
+.bucles:nth-of-type(5) {
+  font-size: 19px;
+  background-color: #343434;
+}
+
+/*each = cada */
+/*EJEMPLO DIAPO*/
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.black {
+  background-color: black;
+}
+
+/*EJEMPLO PROFE*/
+/*una*/ /*dos*/ /*tres*/
+.texto-grande {
+  font-size: 32px;
+}
+
+.texto-mediano {
+  font-size: 24px;
+}
+
+.texto-chico {
+  font-size: 18px;
+}
+
+/*Maps*/
+/*Creamos el bucle para usar los valores del mapa*/
+.btn--twitter {
+  background-color: #55acee;
+}
+
+.btn--facebook {
+  background-color: #3a5795;
+}
+
+.btn--send-mail {
+  background-color: #C25E30;
+}
+
+/*map get*/
+div {
+  background-color: #3673D9;
+  text-align: center;
+}
+
+/*PARA SUS PROYECTOS FINALES USAR OBLIGATORIAMENTE: VARIABLES, ANIDACION, ARCHIVOS PARTIALS, MIXINS Y EXTENDS*/
 
 /*# sourceMappingURL=styles.css.map */

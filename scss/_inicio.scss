@@ -38,3 +38,20 @@ h1 {
     @extend .botones;
     background-color: red;
 }
+
+/*CONDICIONALES*/
+body {
+    /*CONDICION PRINCIPAL*/
+    @if $fiesta == pascuas {
+        background-color: pink;
+        color: #000;
+    } @else if $fiesta == padre { /*otra condicion*/
+        background-color: blue;
+        color: white;
+    } @else if $fiesta == navidad { /*otra condicion*/
+        background-color: red;
+        color: green;
+    } @else { /*si no es ninguna de las anteriores*/
+        background-color: $bg-body;
+    }
+}

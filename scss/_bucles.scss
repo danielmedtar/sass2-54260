@@ -1,0 +1,65 @@
+/*BUCLES*/
+/*Bucle for*/
+/*$i quiere decir iteracion, en programacion es buena practica para los bucles que las variables de las vueltas se llamen i*/
+
+@for $i from 1 through 10 {
+	.col-#{$i}{
+	    width:10% * $i;
+	}
+}
+
+@for $i from 1 through 5 {
+    .bucles:nth-of-type(#{$i}) {
+        font-size: 19px;
+        background-color: darken($gris, $i * 10%);
+    }
+}
+
+/*each = cada */
+/*EJEMPLO DIAPO*/
+@each $colores in "blue", "yellow", "black" {
+	.#{$colores}{
+	    background-color:#{$colores};
+	}
+}
+
+/*EJEMPLO PROFE*/
+         /*una*/    /*dos*/     /*tres*/ 
+$textos: "grande" 32px, "mediano" 24px, "chico" 18px;
+
+@each $medida, $numero in $textos {
+    .texto-#{$medida} {
+        font-size: $numero;
+    }
+}
+
+/*Maps*/
+$redes: ( /*Declaramos nuestro mapa*/
+    twitter: #55acee,
+    facebook:  #3a5795,
+    send-mail: #C25E30
+); 
+/*Creamos el bucle para usar los valores del mapa*/
+@each $redSocial, $color in $redes {
+   .btn--#{$redSocial} {
+       background-color: $color;
+   }
+}
+
+/*map get*/
+$estilos: (
+  color: #3673D9,
+  centro: center,
+  tFuente: 35px,
+  medida: 1rem
+);
+
+div {
+    background-color: map-get($estilos, color);
+    text-align: map-get($estilos, centro);
+  }
+
+  /*PARA SUS PROYECTOS FINALES USAR OBLIGATORIAMENTE: VARIABLES, ANIDACION, ARCHIVOS PARTIALS, MIXINS Y EXTENDS*/
+  
+
+
