@@ -1,0 +1,27 @@
+/*PALETAS DE COLORES*/
+$bg-body: aquamarine;
+$azul: #4285f4;
+$verde: #33d374;
+$gris: #b3b3b3;
+
+/*VARIABLES PARA MEDIDAS*/
+$espaciado: 50px;
+
+/*MIXINS: especie de bolsitas de codigo*/
+/*MIXIN SIN PARAMETROS*/
+@mixin flex-column-centrado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*MIXINS CON PARAMETROS*/
+               /*parametros*/
+@mixin medidas($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+
+
+

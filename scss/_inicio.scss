@@ -1,0 +1,40 @@
+/*OPERACIONES MATEMATICAS*/
+/*SUMA = valor o una variable + numero*/
+/*RESTA = valor o una variable - numero*/
+/*MULTIPLICACION = valor o una variable * numero*/
+/*DIVISION = calc(valor o variable / numero divisor) */
+h1 {
+    margin-bottom: calc($espaciado / 10);
+}
+
+/*APLICANDO MIXIN*/
+#principal {
+    @include flex-column-centrado;
+}
+
+.img1 {
+                    /*ancho, alto*/
+    @include medidas(50px, 100px)
+}
+
+.img2 {
+    @include medidas(200px, 300px)
+}
+
+/*EXTEND*/
+/*EL EXTEND Y SASS EN GENERAL SON 100% SEMANTICOS Y CUIDADORES DE LAS BUENAS PRÁCTICAS*/
+.botones {
+    width: 150px;
+    padding: 8px 10px;
+    border-radius: 20px;
+}
+
+.boton--aceptar {
+    @extend .botones;
+    background-color: green;
+}
+
+.boton--cancelar {
+    @extend .botones;
+    background-color: red;
+}

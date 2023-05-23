@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/*PALETAS DE COLORES*/
+/*VARIABLES PARA MEDIDAS*/
+/*MIXINS: especie de bolsitas de codigo*/
+/*MIXIN SIN PARAMETROS*/
+/*MIXINS CON PARAMETROS*/
+/*parametros*/
+/*OPERACIONES MATEMATICAS*/
+/*SUMA = valor o una variable + numero*/
+/*RESTA = valor o una variable - numero*/
+/*MULTIPLICACION = valor o una variable * numero*/
+/*DIVISION = calc(valor o variable / numero divisor) */
+h1 {
+  margin-bottom: 5px;
+}
+
+/*APLICANDO MIXIN*/
+#principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img1 {
+  /*ancho, alto*/
+  width: 50px;
+  height: 100px;
+}
+
+.img2 {
+  width: 200px;
+  height: 300px;
+}
+
+/*EXTEND*/
+/*EL EXTEND Y SASS EN GENERAL SON 100% SEMANTICOS Y CUIDADORES DE LAS BUENAS PRÁCTICAS*/
+.botones, .boton--cancelar, .boton--aceptar {
+  width: 150px;
+  padding: 8px 10px;
+  border-radius: 20px;
+}
+
+.boton--aceptar {
+  background-color: green;
+}
+
+.boton--cancelar {
+  background-color: red;
+}
+
+/*# sourceMappingURL=styles.css.map */
